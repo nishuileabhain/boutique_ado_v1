@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+<!--
+seven columns by default with six columns on medium and larger screens.
+to vertically centre this entire column add the h-100 class to the container row to give 100% height
+and the my-auto class to the column.
+-->
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {{ products }}
+        </div>
+    </div>
+</div>
+{% endblock %}
